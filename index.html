@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="container-content">
+          <div class="form">
+            <div class="formd">
+              <h2>DAY</h2>
+              <input
+                type="number"
+                name="day"
+                id="day"
+                class="day input-day"
+                placeholder="DD"
+                min="1"
+              />
+              <p class="error errorp"></p>
+            </div>
+
+            <div class="formm">
+              <h2>MONTH</h2>
+              <input
+                type="number"
+                name="month"
+                id="month"
+                class="month input-month"
+                placeholder="MM"
+                min="1"
+              />
+              <p class="error errorp"></p>
+            </div>
+
+            <div class="formy">
+              <h2 class="except">YEAR</h2>
+              <input
+                type="number"
+                name="year"
+                id="year"
+                class="year input-year"
+                placeholder="YYYY"
+                min="1"
+              />
+              <p class="error errorp"></p>
+            </div>
+          </div>
+
+          <section>
+            <div>
+              <hr class="main-hr" />
+              <hr class="hrexcept" />
+              <div class="text">
+                <div class="text output">
+                  <div class="output__text output-year">
+                    <span>- -</span><i>years</i>
+                  </div>
+                  <div class="output__text output-month">
+                    <span>- -</span><i> months </i>
+                  </div>
+                  <div class="output__text output-day">
+                    <span>- -</span><i> days </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <button class="input-button" id="button">
+          <svg class="icon">
+            <use xlink:href="assets/images/logo.svg#logo"></use>
+          </svg>
+        </button>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+      </div>
+    </div>
+    <script src="error.js"></script>
+  </body>
+</html>
